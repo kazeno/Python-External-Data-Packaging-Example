@@ -3,7 +3,7 @@
 This is a proof of concept that shows how to include auxiliary/external data in your Python wheels, without having to include that data in your source code directory.
 You can have that data in completely separate directories, and it will be installed into specific system directories from where you can access it.
 
-## Instructions
+## Instructions for Seeing It in Action
 
 ### 1. Download the repository files
 The following instructions assume you're inside the repository's main directory, unless noted otherwise.
