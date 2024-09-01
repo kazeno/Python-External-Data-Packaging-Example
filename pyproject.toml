@@ -1,0 +1,37 @@
+[project]
+name = "awesome_package"
+version = "1.0.0"
+description = "Python external data packaging example"
+authors = [
+    {name = "Rinku Kazeno", email = "development@kazeno.co"},
+]
+dependencies = []
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.build]
+includes = [
+    "src",
+]
+package-dir = "src"
+source-includes = [
+    "awesome_auxiliary_data",
+    "awesome_auxiliary_scripts",
+]
+
+[tool.pdm.build.wheel-data]
+data = [    # install auxiliary data dir at the python default data scheme dir
+    {path = "awesome_auxiliary_data/*", relative-to = "."},
+]
+scripts = [    # install auxiliary scripts dir at the python default scripts scheme dir
+    {path = "awesome_auxiliary_scripts/*", relative-to = "."},
+]
