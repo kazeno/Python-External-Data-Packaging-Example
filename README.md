@@ -3,6 +3,10 @@
 This is a proof of concept that shows how to include auxiliary/external data in your Python wheels, without having to include that data in your source code directory.
 You can have that data in completely separate directories, and it will be installed into specific system directories from where you can access it.
 
+## Detailed Description
+[https://blag.kazeno.net/development/python/package-and-access-external-data-files-in-your-python-wheels-with-pdm](https://blag.kazeno.net/development/python/package-and-access-external-data-files-in-your-python-wheels-with-pdm)
+
+
 ## Instructions for Seeing It in Action
 
 ### 1. Download the repository files
@@ -45,5 +49,5 @@ On your terminal:
 
 `python -m awesome_package.awesome_module`
 
-This should copy the auxiliary data files into your testing directory, and print the outputs of the auxiliary scripts
+This should copy the auxiliary data files into your testing directory, and print the outputs of the auxiliary scripts.
 

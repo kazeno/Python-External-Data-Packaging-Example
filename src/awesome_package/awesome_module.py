@@ -1,3 +1,5 @@
+# awesome_module.py:
+
 import importlib.util
 import os
 import shutil
